@@ -141,7 +141,7 @@ require_once '../../vendor/autoload.php';
         if (isset($_POST['btn'])) {
             $user = $_POST['user'];
             $pass = $_POST['pass'];
-            $conn = mysqli_connect('localhost', 'root', "Anh911998", 'quanlychamcong');
+            // $conn = mysqli_connect('localhost', 'root', "Anh911998", 'quanlychamcong');
             $sql = " select * from users where username='$user'";
             $sql1 = " select * from nhan_vien where username='$user'";
             $sql2 = " select * from users where username='$user' and role=2";

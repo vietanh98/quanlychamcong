@@ -45,7 +45,7 @@ $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $conn = mysqli_connect('localhost', 'root', "Anh911998", 'quanlychamcong') or die('không thể kết nối sql');
+                                    // $conn = mysqli_connect('localhost', 'root', "Anh911998", 'quanlychamcong') or die('không thể kết nối sql');
                                     $sql = " select * from nghi_viec";
                                     $result = mysqli_query($conn, "SELECT nghi_viec.*,nhan_vien.Hoten AS ten_nhan_vien FROM nghi_viec JOIN nhan_vien ON nghi_viec.Ma_nv = nhan_vien.Ma_nv;") or die("Câu lệnh truy vấn sai");
                                     while ($row = mysqli_fetch_assoc($result)) {
